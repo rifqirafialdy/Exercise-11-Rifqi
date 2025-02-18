@@ -8,7 +8,8 @@ class StackTest {
     void push() {
         Stack stack = new Stack();
         stack.push(10);
-        assertEquals(10, stack.peek());
+        stack.push(20);
+        assertEquals(20, stack.peek());
     }
 
     @org.junit.jupiter.api.Test
